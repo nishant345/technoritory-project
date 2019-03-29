@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+            td.txt {
+                max-width: 150px;
+                word-wrap: break-word;
+            }
+        </style>
+    <script src="js/script.js"></script>
+    <script src="js/aes.js"></script>
+    <script src="js/cryptoJS.js"></script>
+
+    <script>
+            var result;
+            function getData(){
+                result = window.ob.returnData();
+                if(result.localeCompare("") == 0){
+                    result = window.ob.returnData();
+                    getData();
+                }
+                else{
+                    var temp = result.split(";");
+                    var story = temp[13].split(":");
+
+                    var t = temp[16].split(":");
+                    var imgSrc = t[1] +":" +t[2];
+
+                    var str = "url(" + imgSrc + ")";
+                    document.getElementById("body").style.backgroundImage = str;
+                    document.getElementById("body").style.backgroundRepeat = "no-repeat";
+                    document.getElementById("body").style.backgroundAttachment = "fixed";
+                    document.getElementById("body").style.backgroundPosition = "center";
+                    document.getElementById("body").style.backgroundSize = "100% 100%";
+
+                    document.getElementById("productstory").innerHTML = story[1];
+                }
+
+            }
+            function thirdStory(){
+                window.ob.goToThirdStory(result);
+            }
+
+        </script>
+</head>
+<body onload="getData()" id="body">
+<div id="base"  style="color : white; text-align: center; background: rgba(0, 0, 0, 0.6); width: 100%; height:100%; margin : 0 auto;">
+    <br>
+    <div id="productstory" style="color : white; font-size: 20px; padding:0 10px 0 10px"></div>
+    <br><br>
+    <button type="button" class="btn btn-outline-light" onclick="thirdStory()">NEXT</button>
+    <br><br>
+</div>
+
+</body>
+</html>

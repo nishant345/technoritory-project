@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Technoritory</title>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <style>
+        .margin-bottom-1rem {
+            margin-bottom: 1rem;
+        }
+    </style>
+    <!-- //Meta Tags -->
+
+    <!-- Style-sheets -->
+    <!-- Bootstrap Css -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <!-- Bootstrap Css -->
+    <!-- Common Css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// Common Css -->
+    <!-- Nav Css -->
+    <link rel="stylesheet" href="../css/style4.css">
+    <!--// Nav Css -->
+    <!-- Fontawesome Css -->
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <!--// Fontawesome Css -->
+    <!--// Style-sheets -->
+
+    <!--web-fonts-->
+    <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--//web-fonts-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h1>
+                    <a href="index.html"> <img class="width-100" src="../images/logo-full-white-transparent.png" alt="technoritory_logo"></a>
+                </h1>
+                <span><a href="index.html"> <img class="width-80" src="../images/logo-white-transparent.png" alt="technoritory_logo"></a></span>
+            </div>
+            <div class="profile-bg"></div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="../index.html">
+                        <i class="fas fa-th-large"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <i class="far fa-window-restore"></i>
+                         Your Products
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html" > <!-- data-toggle="collapse" aria-expanded="false" -->
+                        <i class="fas fa-laptop"></i>
+                         Submit Products
+                        <!-- <i class="fas fa-angle-down fa-pull-right"></i> -->
+                    </a>
+                    <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="cards.html">Submit Single</a>
+                        </li>
+                        <li>
+                            <a href="carousels.html">Submit Batch</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a href="500.html">
+                        <i class="fas fa-th"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li>
+                    <a href="500.html">
+                        <i class="fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li>
+                    <a href="500.html">
+                        <i class="far fa-envelope"></i>
+                        Messages
+                        <span class="badge badge-secondary bg-danger">5 New</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!-- top-bar -->
+            <nav class="navbar navbar-default mb-xl-5 mb-4">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <ul class="top-icons-agileits-w3layouts float-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="far fa-bell"></i>
+                                <span class="badge">4</span>
+                            </a>
+                            <div class="dropdown-menu top-grid-scroll drop-1">
+                                <h3 class="sub-title-w3-agileits">User notifications</h3>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="../images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">John Doe</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>4 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="../images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Diana</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>6 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="../images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Steffie</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>12 mins ago</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <div class="notif-img-agileinfo">
+                                        <img src="../images/clone.jpg" class="img-fluid" alt="Responsive image">
+                                    </div>
+                                    <div class="notif-content-wthree">
+                                        <p class="paragraph-agileits-w3layouts py-2">
+                                            <span class="text-diff">Jack</span> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                                        <h6>1 days ago</h6>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">view all notifications</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fas fa-spinner"></i>
+                            </a>
+                            <div class="dropdown-menu top-grid-scroll drop-2">
+                                <h3 class="sub-title-w3-agileits">Shortcuts</h3>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-chart-pie mr-3"></i>Sed feugiat</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fab fa-connectdevelop mr-3"></i>Aliquam sed</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-tasks mr-3"></i>Lorem ipsum</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fab fa-superpowers mr-3"></i>Cras rutrum</h4>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="far fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu drop-3">
+                                <div class="profile d-flex mr-o">
+                                    <div class="profile-l align-self-center">
+                                        <img src="../images/reserved_logo.png" class="img-fluid mb-3" alt="Responsive image">
+                                    </div>
+                                    <div class="profile-r align-self-center">
+                                        <h3 class="sub-title-w3-agileits">Reserved</h3>
+                                        <a href="mailto:info@example.com">reserved@biz.com</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-user mr-3"></i>My Profile</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="fas fa-link mr-3"></i>Activity</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-envelope mr-3"></i>Messages</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-question-circle mr-3"></i>Faq</h4>
+                                </a>
+                                <a href="#" class="dropdown-item mt-3">
+                                    <h4>
+                                        <i class="far fa-thumbs-up mr-3"></i>Support</h4>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--// top-bar -->
+
+            <!-- main-heading -->
+            <h2 class="main-title-w3layouts mb-2 text-center">Reserved</h2>
+            <!--// main-heading -->
+
+            <!-- Tables content -->
+            <section class="tables-section">
+                <!-- table2 -->
+                <div class="outer-w3-agile mt-3">
+                     <!-- Search-from -->
+                        <form action="#" method="post" class="form-inline mx-auto search-form margin-bottom-1rem">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required="">
+                            <button class="btn btn-style my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <!--// Search-from -->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">Product No.</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Manufacturer</th>
+                                    <th scope="col">Batch No.</th>
+                                    <th scope="col">Made</th>
+                                    <th scope="col">Block Hash</th>
+                                    <th scope="col">Download QR</th>
+                                    <th scope="col">Product Story</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>45771</td>
+                                    <td>Sweatshirt with imprint</td>
+                                    <td>Sweatshirt</td>
+                                    <td><img class="image" src="../images/45771.jpg" alt="Sweatshirt"/></td>
+                                    <td>Reserved</td>
+                                    <td>TL475-99M-M</td>
+                                    <td>Germany</td>
+                                    <td>0xb4b6403d91188ef8a4b3159b94d1db21f19ece75b00f14690e964d3f6fbc6ecd</td>
+                                    <td><i class="fas fa-arrow-alt-circle-down" title="Download QR"></i></td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                        View <span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>45772</td>
+                                    <td>Jacket with epaulettes</td>
+                                    <td>Jacket</td>
+                                    <td><img class="image" src="../images/45772.jpg" alt="Sweatshirt"/></td>
+                                    <td>Reserved</td>
+                                    <td>TG895-99X-M</td>
+                                    <td>Germany</td>
+                                    <td>0x25b86b974b8bf0ec1dd7380e086b029c2a2a6feebea84ca842c31b2c104524ba</td>
+                                    <td><i class="fas fa-arrow-alt-circle-down" title="Download QR"></i></td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                        View <span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>45773</td>
+                                    <td>Ripped-knit sweatshirt</td>
+                                    <td>Sweatshirt</td>
+                                    <td><img class="image" src="../images/45773.jpg" alt="Sweatshirt"/></td>
+                                    <td>Reserved</td>
+                                    <td>SU552-00X-M</td>
+                                    <td>Germany</td>
+                                    <td>0x88f1e2bcb55f1baa4e4c777de94ce1d56a78b5bbeaec0759ecc080f2ac3458d3</td>
+                                    <td><i class="fas fa-arrow-alt-circle-down" title="Download QR"></i></td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                        View <span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>45774</td>
+                                    <td>Red Sneakers</td>
+                                    <td>Shoes</td>
+                                    <td><img class="image img-circle" src="../images/45774.jpg" alt="Sweatshirt"/></td>
+                                    <td>Reserved</td>
+                                    <td>SU552-00X-M</td>
+                                    <td>Germany</td>
+                                    <td>0x779a43078687bfc130c3dbc8cf424ba0c8ea3e22d77c659951d4da9d4f27858a</td>
+                                    <td><i class="fas fa-arrow-alt-circle-down" title="Download QR"></i></td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                        View <span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>45775</td>
+                                    <td>Skinny Women Jeans</td>
+                                    <td>Jeans</td>
+                                    <td><img class="image" src="../images/45575.jpg" alt="Sweatshirt"/></td>
+                                    <td>Reserved</td>
+                                    <td>SH212-99X-M</td>
+                                    <td>Germany</td>
+                                    <td>0x3d731ba8fefdfaeb68f767b1fe5ef8661e24d3394f928bfe62b650689410c9dc</td>
+                                    <td><i class="fas fa-arrow-alt-circle-down" title="Download QR"></i></td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm" aria-label="Left Align">
+                                        View <span class="glyphicon glyphicon-eye-open" aria-hidden="true">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!--// Tables content -->
+        </div>
+    </div>
+
+
+    <!-- Required common Js -->
+    <script src='../js/jquery-2.2.3.min.js'></script>
+    <!-- //Required common Js -->
+
+    <!-- Sidebar-nav Js -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    <!--// Sidebar-nav Js -->
+
+    <!-- dropdown nav -->
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->
+
+    <!-- Js for bootstrap working-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- //Js for bootstrap working -->
+</body>
+
+</html>

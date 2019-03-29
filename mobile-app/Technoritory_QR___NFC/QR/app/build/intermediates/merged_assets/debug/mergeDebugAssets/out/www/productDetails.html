@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+            td.txt {
+                max-width: 150px;
+                word-wrap: break-word;
+            }
+        </style>
+    <script src="js/script.js"></script>
+    <script src="js/aes.js"></script>
+    <script src="js/cryptoJS.js"></script>
+
+    <script>
+            var result;
+            function getData(){
+                result = window.ob.returnData();
+                if(result.localeCompare("") == 0){
+                    result = window.ob.returnData();
+                    getData();
+                }
+                else{
+                    var temp = result.split(";");
+                    var i;
+                    var str = "<table class=\"table table-dark\">";
+                    var k;
+
+                    for(i = 2; i < 12; i++){
+                        k  = temp[i].split(":");
+                        if(k[0].trim().localeCompare("Product Link") == 0){
+                            str += "<tr><td class=\"txt\"><b>" + k[0] + "</b></td><td class=\"txt\">"+  k[1] + ":" + k[2] +"</td></tr>";
+                        }
+                        else{
+                            str += "<tr><td class=\"txt\"><b>" + k[0] + "</b></td><td class=\"txt\">"+  k[1] +"</td></tr>";
+                        }
+
+                    }
+                    str += "</table>";
+                    document.getElementById("productData").innerHTML = str;
+                }
+
+            }
+
+        </script>
+</head>
+<body onload="getData()" style="background-color: black;">
+
+    <br>
+    <u><h1 style="text-align: center; color : white">Product Details</h1></u>
+    <br><br>
+    <div id="productData"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <style>
+            td.txt {
+                max-width: 150px;
+                word-wrap: break-word;
+            }
+        </style>
+        <script src="js/script.js"></script>
+        <script src="js/aes.js"></script>
+        <script src="js/cryptoJS.js"></script>
+
+        <script>
+            var result;
+            var encrypted;
+            var decrypted;
+            function getData(){
+                result = window.ob.returnData();
+                if(result.localeCompare("") == 0){
+                   getData();
+                }
+                else{
+                    var temp = result.split(";");
+                    var str = "<table class=\"table\">";
+
+                    var t = temp[0].split(":");
+                    var showImg = t[1] +":" +t[2];
+
+                    var name = temp[3].split(":");
+
+                    var hash = temp[1].split(":");
+                    str += "<tr><td style=\"text-align:center;\">Transaction Hash</td></tr><tr><td class=\"txt\" style=\"text-align:center;\">"+  hash[1] +"</td></tr>";
+
+                    str += "</table>";
+
+                    document.getElementById("productname").innerHTML = name[1];
+
+                    document.getElementById("productData").innerHTML = str;
+
+                    document.getElementById("image").src = showImg;
+                }
+
+            }
+
+            function beginJourney(){
+                window.ob.journey(result);
+            }
+
+            function seeDetails(){
+                window.ob.details(result);
+            }
+        </script>
+    </head>
+    <body onload="getData()">
+        <br><br>
+        <img id="image" style=" display: block; margin-left: auto; margin-right: auto;">
+
+        <br><br>
+        <div id="productname" align="center" style="font-size: 20px;"></div>
+        <br>
+        <div id="productData"></div>
+
+        <br>
+        <h3 style="text-align:center;" >You just verified this product</h3>
+
+        <br>
+        <div align="center">
+            <button type="button" class="btn btn-outline-dark" onclick="beginJourney()">BEGIN THE JOURNEY</button>
+            <button type="button" class="btn btn-outline-dark" onclick="seeDetails()">SEE PRODUCT DETAILS</button>
+        </div>
+    </body>
+</html>
